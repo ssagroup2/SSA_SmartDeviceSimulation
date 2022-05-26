@@ -27,7 +27,7 @@ class Topic(ABC):
 		self.retain_probability = retain_probability
 		self.client = None
 		
-	#establish a connection between the broker and smart devices or sensors
+	# establish a connection between the broker and smart devices or sensors
 	def connect(self):
 		self.client = mqtt.Client(self.topic_url, clean_session=True, transport='tcp')
 		self.client.on_publish = self.on_publish
