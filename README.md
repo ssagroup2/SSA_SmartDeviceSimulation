@@ -1,2 +1,3 @@
 # smartdevices
-MSc Cybersecurity - SSA May 2022
+
+MSc Cybersecurity - Secure Software Architecture May 2022
