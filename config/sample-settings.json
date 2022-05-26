@@ -1,3 +1,12 @@
+/*
+Author(s): cryptopal85
+
+Version history:
+      - May 26 2022 - initial commit for smart device/sensor configurations
+        this file is a placeholder for configuring sensors and smart devices to connect controller or broker
+        
+*/
+
 {
   "BROKER_URL": "test.mosquitto.org",
   "BROKER_PORT": 1883,
