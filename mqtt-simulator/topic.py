@@ -2,7 +2,9 @@
 # Author(s): cryptopal85
 #
 # Version history: May 26 2022 - initialising the broker topic structure
-#                  Placeholder - placeholder
+#                  May 28 2022 - Certificate-based SSL/TLS support added
+#                  May 28 2022 - Communication encrypted on network level
+#                  Placeholder - todo - encrypt payload application level
 #
 # Notes: 'topic.py' =>> the broker uses the topic of a message to decide which client receives which message
 # for more information about topics refer to the =>> https://mosquitto.org/man/mqtt-7.html and
@@ -12,6 +14,7 @@ import time
 import json
 import random
 import threading
+import ssl
 from abc import ABC, abstractmethod
 import paho.mqtt.client as mqtt
 
@@ -30,6 +33,13 @@ class Topic(ABC):
 	# establish a connection between the broker and smart devices or sensors
 	def connect(self):
 		self.client = mqtt.Client(self.topic_url, clean_session=True, transport='tcp')
+		# Authenticate clients via certificates and encrypt traffic on network level
+		self.client.tls_set(
+			ca_certs='/Users/gurkanhuray/projects/smartdevices/certs/ca/ca.crt',
+			certfile='/Users/gurkanhuray/projects/smartdevices/certs/device-sensor/ssa2022client.crt',
+			keyfile='/Users/gurkanhuray/projects/smartdevices/certs/device-sensor/ssa2022client.key',
+			tls_version=ssl.PROTOCOL_TLSv1_2
+		)
 		self.client.on_publish = self.on_publish
 		self.client.connect(self.broker_url, self.broker_port)
 		self.client.loop_start()
