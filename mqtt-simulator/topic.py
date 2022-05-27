@@ -42,6 +42,7 @@ class Topic(ABC):
 		self.client.lood_end()
 		self.client.disconnect()
 		
+	# display publish data on a terminal based on 'H:M:S' format
 	def on_publish(self, client, userdata, result):
 		print(f'[{time.strftime("%H:%M:%S")}] Data published on: {self.topic_url}')
 		
@@ -74,7 +75,7 @@ class TopicAuto(Topic, threading.Thread):
 				elif data['TYPE'] == 'bool':
 					payload[data['NAME']] = random.choice([True, False])
 		else:
-			# continue populating next data
+			# populate next data
 			payload = self.old_payload
 			for data in self.topic_data:
 				if random.random() > (1 - self.retain_probability):
