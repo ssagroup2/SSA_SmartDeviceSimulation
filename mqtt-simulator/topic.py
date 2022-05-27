@@ -39,10 +39,10 @@ class Topic(ABC):
 		pass
 		
 	def disconnect(self):
-		self.client.lood_end()
+		self.client.loop_end()
 		self.client.disconnect()
 		
-	# display publish data on a terminal based on 'H:M:S' format
+	# display the published data on a terminal based on 'H:M:S' format
 	def on_publish(self, client, userdata, result):
 		print(f'[{time.strftime("%H:%M:%S")}] Data published on: {self.topic_url}')
 		
