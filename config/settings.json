@@ -1,6 +1,6 @@
 {
   "BROKER_URL": "localhost",
-  "BROKER_PORT": 8883,
+  "BROKER_PORT": 8884,
   "TOPICS": [
     {
       "TYPE": "multiple",
