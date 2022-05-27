@@ -6,7 +6,7 @@
       "TYPE": "multiple",
       "PREFIX": "lamp",
       "RANGE_START": 1,
-      "RANGE_END": 2,
+      "RANGE_END": 5,
       "TIME_INTERVAL": 4,
       "RETAIN_PROBABILITY": 0.85,
       "DATA": [
