@@ -3,8 +3,8 @@
 #
 # Version history: May 26 2022 - initialising the broker topic structure
 #                  May 28 2022 - Certificate-based SSL/TLS support added
-#                  May 28 2022 - Communication encrypted on network level
-#                  Placeholder - todo - encrypt payload application level
+#                              - communication encrypted on network level
+#                  May 29 2022 - Added symmetric encryption support for encrypting payload
 #
 # Notes: 'topic.py' =>> the broker uses the topic of a message to decide which client receives which message
 # for more information about topics refer to the =>> https://mosquitto.org/man/mqtt-7.html and
@@ -15,8 +15,9 @@ import json
 import random
 import threading
 import ssl
-from abc import ABC, abstractmethod
 import paho.mqtt.client as mqtt
+from abc import ABC, abstractmethod
+from cryptography.fernet import Fernet
 
 
 # AbstractMethod =>> https://docs.python.org/3.10/library/abc.html#abc.abstractmethod
@@ -54,7 +55,7 @@ class Topic(ABC):
 		
 	# display the published data on a terminal based on 'H:M:S' format
 	def on_publish(self, client, userdata, result):
-		print(f'[{time.strftime("%H:%M:%S")}] Data published on: {self.topic_url}')
+		print(f'[{time.strftime("%H:%M:%S")}] Data published on: {self.topic_url} Payload: {self.enc_msg} Message: {self.dec_msg}')
 		
 		
 class TopicAuto(Topic, threading.Thread):
@@ -62,6 +63,19 @@ class TopicAuto(Topic, threading.Thread):
 		Topic.__init__(self, broker_url, broker_port, topic_url, topic_data, retain_probability)
 		threading.Thread.__init__(self, args=(), kwargs=None)
 		self.time_interval = time_interval
+		# payload encryption
+		# this mechanism can further be used to encrypt all payload data e2e fashion
+		# which available under '/config/settings.json'. The current code below
+		# demonstrates proof of concept payload encryption at application level
+		# by encrypting and de-encrypting 'generic placeholder data' and passing
+		# to the terminal
+		enc_key = Fernet.generate_key()
+		fernet = Fernet(enc_key)
+		message = "ssa2022-payload-encryption"
+		encrypted_message = fernet.encrypt(message.encode())
+		decrypted_message = fernet.decrypt(encrypted_message).decode()
+		self.enc_msg = encrypted_message
+		self.dec_msg = decrypted_message
 		self.old_payload = None
 		
 	def run(self):
