@@ -5,6 +5,7 @@
 #                  May 28 2022 - Certificate-based SSL/TLS support added
 #                              - communication encrypted on network level
 #                  May 29 2022 - Added symmetric encryption support for encrypting payload
+#                  May 31 2022 - added references  and code comments
 #
 # Notes: 'topic.py' =>> the broker uses the topic of a message to decide which client receives which message
 # for more information about topics refer to the =>> https://mosquitto.org/man/mqtt-7.html and
@@ -64,6 +65,7 @@ class Topic(ABC):
 		print(f'[{time.strftime("%H:%M:%S")}] Data published on: {self.topic_url} Payload: {self.enc_msg} Message: {self.dec_msg}')
 		
 		
+# https://docs.python.org/3.10/library/threading.html#module-threading
 class TopicAuto(Topic, threading.Thread):
 	def __init__(self, broker_url, broker_port, topic_url, topic_data, retain_probability, time_interval):
 		Topic.__init__(self, broker_url, broker_port, topic_url, topic_data, retain_probability)
