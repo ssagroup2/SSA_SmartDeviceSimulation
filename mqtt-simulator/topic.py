@@ -87,8 +87,7 @@ class TopicAuto(Topic, threading.Thread):
 	# Correlation between MQTT loss and delay according to QoS level
 	# Although there are minor performance concerns, QoS level two four-way-handshake
 	# stands out as a recommended way of delivering messages to avoid noticeable package losses
-	# according to analyses in recent studies. Therefore, the following code below also uses
-	# the same QoS level.
+	# according to analyses in recent studies. Therefore, the following code below also uses the same QoS level.
 	# Lee, S., Kim, H., Hong, D.K. and Ju, H., 2013, January. Correlation analysis of MQTT loss and delay according to QoS level. In The International Conference on Information Networking 2013 (ICOIN) (pp. 714-717). IEEE.
 	def run(self):
 		self.connect()
