@@ -21,7 +21,7 @@ from cryptography.fernet import Fernet
 
 
 # AbstractMethod =>> https://docs.python.org/3.10/library/abc.html#abc.abstractmethod
-# define and parse configs
+# define and set defaults 'settings.json'
 class Topic(ABC):
 	def __init__(self, broker_url, broker_port, topic_url, topic_data, retain_probability):
 		self.broker_url = broker_url
@@ -32,6 +32,7 @@ class Topic(ABC):
 		self.client = None
 		
 	# establish a connection between the broker and smart devices or sensors
+	# https://www.eclipse.org/paho/index.php?page=clients/python/docs/index.php
 	def connect(self):
 		self.client = mqtt.Client(self.topic_url, clean_session=True, transport='tcp')
 
