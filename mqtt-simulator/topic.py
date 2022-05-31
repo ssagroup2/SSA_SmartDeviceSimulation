@@ -34,7 +34,11 @@ class Topic(ABC):
 	# establish a connection between the broker and smart devices or sensors
 	def connect(self):
 		self.client = mqtt.Client(self.topic_url, clean_session=True, transport='tcp')
+
 		# Authenticate clients via certificates and encrypt traffic on network level
+		# It does provide certificate-based authentication on network level including
+		# protection of authentication data and encryption for all traffic.
+		# Amnalou, S. and Bakar, K.A.A., 2020. Lightweight security mechanism over MQTT protocol for IoT devices. Int. J. Adv. Comput. Sci. Appl, 11(7), pp.202-207.
 		self.client.tls_set(
 			ca_certs='/Users/gurkanhuray/projects/smartdevices/certs/ca/ca.crt',
 			certfile='/Users/gurkanhuray/projects/smartdevices/certs/device-sensor/ssa2022client.crt',
@@ -80,6 +84,12 @@ class TopicAuto(Topic, threading.Thread):
 		self.dec_msg = decrypted_message
 		self.old_payload = None
 
+	# Correlation between MQTT loss and delay according to QoS level
+	# Although there are minor performance concerns, QoS level two four-way-handshake
+	# stands out as a recommended way of delivering messages to avoid noticeable package losses
+	# according to analyses in recent studies. Therefore, the following code below also uses
+	# the same QoS level.
+	# Lee, S., Kim, H., Hong, D.K. and Ju, H., 2013, January. Correlation analysis of MQTT loss and delay according to QoS level. In The International Conference on Information Networking 2013 (ICOIN) (pp. 714-717). IEEE.
 	def run(self):
 		self.connect()
 		while True:
