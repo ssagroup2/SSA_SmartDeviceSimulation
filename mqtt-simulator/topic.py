@@ -54,6 +54,7 @@ class Topic(ABC):
 		self.client.disconnect()
 		
 	# display the published data on a terminal based on 'H:M:S' format
+	# demonstrate payload encryption and decryption based on Fernet cryptography
 	def on_publish(self, client, userdata, result):
 		print(f'[{time.strftime("%H:%M:%S")}] Data published on: {self.topic_url} Payload: {self.enc_msg} Message: {self.dec_msg}')
 		
@@ -63,12 +64,13 @@ class TopicAuto(Topic, threading.Thread):
 		Topic.__init__(self, broker_url, broker_port, topic_url, topic_data, retain_probability)
 		threading.Thread.__init__(self, args=(), kwargs=None)
 		self.time_interval = time_interval
+
 		# payload encryption
 		# this mechanism can further be used to encrypt all payload data e2e fashion
 		# which available under '/config/settings.json'. The current code below
 		# demonstrates proof of concept payload encryption at application level
-		# by encrypting and de-encrypting 'generic placeholder data' and passing
-		# to the terminal
+		# by encrypting and de-encrypting 'generic placeholder data' and passing to the terminal
+		# Ismail, E.G., CHAHBOUN, A. and RAISSOUNI, N., 2020. FERNET SYMMETRIC ENCRYPTION METHOD to GATHER MQTT E2E SECURE COMMUNICATIONS for IoT DEVICES.
 		enc_key = Fernet.generate_key()
 		fernet = Fernet(enc_key)
 		message = "ssa2022-payload-encryption"
@@ -77,7 +79,7 @@ class TopicAuto(Topic, threading.Thread):
 		self.enc_msg = encrypted_message
 		self.dec_msg = decrypted_message
 		self.old_payload = None
-		
+
 	def run(self):
 		self.connect()
 		while True:
