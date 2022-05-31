@@ -15,7 +15,7 @@
           "TYPE": "bool"
         },
         {
-          "NAME": "temperature",
+          "NAME": "colour temperature",
           "TYPE": "int",
           "MIN_VALUE": 2700,
           "MAX_VALUE": 6500,
