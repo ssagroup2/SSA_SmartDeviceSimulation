@@ -49,13 +49,19 @@ The following python libraries are required:
 * sys
 * uuid
 
-## Code Structure ##
+## Code Structure
 
 The code structure is as follows:
 
 ![This is an image](https://github.com/ssagroup2/SSA_SmartDeviceSimulation/blob/main/images/structure.jpg)
 
-`app.py` - 
+`app.py` - Application placeholder file to run `simulator.py`
+
+`simulator.py` - Responsible for reading topics and displaying data to the terminal. This data is communication between sensors and the broker.
+
+`topic.py` - Used to establish a connection between sensors and the broker. The broker uses the topic of a message to decide which client receives which message.
+
+
 
 ### Running the Code
 
