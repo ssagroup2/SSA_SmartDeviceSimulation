@@ -149,7 +149,15 @@ The figure below represents a summary of the vulnerabilities identified in the i
 
 5 were selected to be mitigated, these were as follows:
 
-(TBD)
+01 - No Default, Weak or hardcoded passwords were used. Communication between sensor devices were performed via TLS certificate based authentication.
+
+03 - All communication was performed via port 8884 which supports TLS with Encrytpion. No insecure ports are used.
+
+05 - Secure protocols such as HTTPS are used to encrypt traffic in transit.
+
+08 - Only secure (verified by md5 checksums) libraries are used. Example below:
+
+![This is an image](https://github.com/ssagroup2/SSA_SmartDeviceSimulation/blob/main/images/crypt.jpg)
 
 ## Functional Testing Images
 
