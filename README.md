@@ -59,16 +59,11 @@ The code structure is as follows:
 
 `simulator.py` - Responsible for reading topics and displaying data to the terminal. This data is communication between sensors and the broker.
 
-`topic.py` - Used to establish a connection between sensors and the broker. The broker uses the topic of a message to decide which client receives which message.
+`topic.py` - Used to establish a connection between sensors and the broker. The broker uses the topic of a message to decide which client receives which message. TLS client certificates and key paths are configured in this file.
 
+`sample-mosquitto.conf` - Configuration file for Mosquitto Broker. TLS broker certificates and key paths are configured in this file.
 
-
-### Running the Code
-
-
-
-
-### Configuration
+## Configuration
 
 - The `config/settings.json` file has three main configuration parameters:
 
@@ -134,3 +129,15 @@ The code structure is as follows:
   | `MIN_VALUE` | number | Minimum value that the property can assume                                           | If `TYPE` is different from `"bool"` |
   | `MAX_VALUE` | number | Maximum value that the property can assume                                           | If `TYPE` is different from `"bool"` |
   | `MAX_STEP`  | number | Maximum change that can be applied to the property from a published data to the next | If `TYPE` is different from `"bool"` |
+
+
+## Running the Code
+
+1. Run the Mosquitto Broker which produces the following output:
+
+![This is an image](https://github.com/ssagroup2/SSA_SmartDeviceSimulation/blob/main/images/mos.png)
+
+2. Run `app.py` which produces the following output:
+
+![This is an image](https://github.com/ssagroup2/SSA_SmartDeviceSimulation/blob/main/images/sensors.png)
+
