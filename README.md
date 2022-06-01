@@ -49,11 +49,18 @@ The following python libraries are required:
 * sys
 * uuid
 
+## Code Structure ##
+
+The code structure is as follows:
+
+![This is an image](https://github.com/ssdgroup2/issdes/blob/main/images/codestructure.png)
+
 ### Running the Code
 
 
 
-## Configuration
+
+### Configuration
 
 - The `config/settings.json` file has three main configuration parameters:
 
