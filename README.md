@@ -159,6 +159,14 @@ The figure below represents a summary of the vulnerabilities identified in the i
 
 ![This is an image](https://github.com/ssagroup2/SSA_SmartDeviceSimulation/blob/main/images/crypt.jpg)
 
+In addition the following vulnerabilities were mitigated:
+
+(TBD)
+
+Furthermore the application addresses reliability, latency and lost messages by the implementation of QoS as seen in the screenshot below. QoS....(TBD)
+
+![This is an image](https://github.com/ssagroup2/SSA_SmartDeviceSimulation/blob/main/images/qos2.png)
+
 ## Functional Testing Images
 
 (TBD)
