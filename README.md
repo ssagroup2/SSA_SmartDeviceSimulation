@@ -1,6 +1,8 @@
 # University of Essex - MSc CyberSecurity - Secure Software Architecture Module - May 2022
 
-MQTT simulator coded in [Python](https://www.python.org/) to simulate interactions between smart devices, sensors and brokers.
+## Introduction ##
+
+An application was developed in [Python](https://www.python.org/) to simulate interactions between smart devices, sensors and brokers using the MQTT protocol.
 
 [Features](#features) •
 [Getting Started](#getting-started) •
@@ -23,9 +25,33 @@ MQTT simulator coded in [Python](https://www.python.org/) to simulate interactio
 
 #### Prerequisites
 
+The following pre-requisites are required to successfully run the code:
+
+* Python 3.10.3
+* Mosquitto Broker installed and running on port 8884
+
 #### Installing Dependencies
 
-#### Running
+The following python libraries are required:
+
+* time
+* json
+* random
+* threading
+* ssl
+* paho.mqtt.client
+* cryptography.fernet
+* base64
+* hashlib
+* logging
+* string
+* struct
+* sys
+* uuid
+
+#### Running the Code
+
+
 
 ## Configuration
 
