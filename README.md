@@ -21,16 +21,16 @@ An application was developed in [Python](https://www.python.org/) to simulate in
 - Multiple topics based on variable ID or ITEMs
 - Random data generation based on JSON parameters for simulating
 
-# Getting Started
+## Getting Started
 
-#### Prerequisites
+### Prerequisites
 
 The following pre-requisites are required to successfully run the code:
 
 * Python 3.10.3
 * Mosquitto Broker installed and running on port 8884
 
-#### Installing Dependencies
+### Installing Dependencies
 
 The following python libraries are required:
 
@@ -49,7 +49,7 @@ The following python libraries are required:
 * sys
 * uuid
 
-#### Running the Code
+### Running the Code
 
 
 
