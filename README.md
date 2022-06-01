@@ -143,15 +143,21 @@ The code structure is as follows:
 
 ## Discussion
 
+The figure below represents a summary of the vulnerabilities identified in the initial design document:
 
+![This is an image](https://github.com/ssagroup2/SSA_SmartDeviceSimulation/blob/main/images/vul.png)
+
+5 were selected to be mitigated, these were as follows:
+
+(TBD)
 
 ## Functional Testing Images
 
-
+(TBD)
 
 
 ## References 
 
 
-
+(TBD)
 
