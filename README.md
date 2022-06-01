@@ -53,7 +53,7 @@ The following python libraries are required:
 
 The code structure is as follows:
 
-![This is an image](https://github.com/ssagroup2/blob/main/SSA_SmartDeviceSimulation/images/structure.jpg)
+![This is an image](https://github.com/ssagroup2/SSA_SmartDeviceSimulation/blob/main/images/structure.jpg)
 
 `app.py` - 
 
