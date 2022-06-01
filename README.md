@@ -1,6 +1,4 @@
-# smartdevices
-
-MSc Cybersecurity - Secure Software Architecture May 2022
+# University of Essex - MSc CyberSecurity - Secure Software Architecture Module - May 2022
 
 MQTT simulator coded in [Python](https://www.python.org/) to simulate interactions between smart devices, sensors and brokers.
 
