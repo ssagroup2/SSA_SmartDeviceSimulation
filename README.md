@@ -13,13 +13,13 @@ An application was developed in [Python](https://www.python.org/) to simulate in
 ## Features
 
 - Client-based authentication
-- SSL/TLS encryption on network level - protecting authentication data
-- Payload encryption on application level - e2e of payload data (work-in-progress)
+- SSL/TLS encryption on a network level - protecting authentication data
+- Payload encryption on an application level - e2e encryption of payload data
 - Efficient, modular and easy-to-use
 - JSON-based single configuration file
 - Pre-defined fixed topics
 - Multiple topics based on variable ID or ITEMs
-- Random data generation based on JSON parameters for simulating
+- Random data generation based on JSON parameters used for simulation purposes
 
 ## Getting Started
 
