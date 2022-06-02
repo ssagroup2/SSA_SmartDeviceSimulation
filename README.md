@@ -61,7 +61,7 @@ The code structure is as follows:
 
 `topic.py` - Used to establish a connection between sensors and the broker. The broker uses the topic of a message to decide which client receives which message. TLS client certificates and key paths are configured in this file.
 
-`sample-mosquitto.conf` - Configuration file for Mosquitto Broker. TLS broker certificates and key paths are configured in this file.
+`sample-mosquitto.conf` - Configuration file for Mosquitto broker. TLS broker certificates and key paths are configured in this file.
 
 ## Configuration
 
@@ -147,25 +147,29 @@ The figure below represents a summary of the vulnerabilities identified in the i
 
 ![This is an image](https://github.com/ssagroup2/SSA_SmartDeviceSimulation/blob/main/images/vul.png)
 
-5 were selected to be mitigated, these were as follows:
+5 vulnerabilities were selected to be mitigated, these were as follows:
 
 01 - No Default, Weak or hardcoded passwords were used. Communication between sensor devices were performed via TLS certificate based authentication.
 
 03 - All communication was performed via port 8884 which supports TLS with Encrytpion. No insecure ports are used.
 
-05 - Secure protocols such as HTTPS are used to encrypt traffic in transit.
+05 - Secure protocols such as HTTPS are used to encrypt traffic in transit. 
 
 08 - Only secure (verified by md5 checksums) libraries are used. Example below:
 
 ![This is an image](https://github.com/ssagroup2/SSA_SmartDeviceSimulation/blob/main/images/crypt.jpg)
 
-In addition the following vulnerabilities were mitigated:
-
 Insecure Remote Access - The broker is configured to allow connection over SSL/TLS with a valid certificate and refuses conections from unauthorised devices/sensors. 
 
-Furthermore the application addresses reliability by the use of the MQTT protocol. MQTT supports QoS (Quality of Service) which addresses latency as well as lost messages. The implementation of QoS can be seen in the screenshot below. According to the experiment performed by Lee et al. (2021) message loss was reduced by 1.57 times when QoS 2 was used.
+Furthermore the application addresses reliability by the use of the MQTT protocol. MQTT provides the following benefits (MQTT, 2022):
+
+* Lightweight & Efficient - require minimal resources, reducing power consumption as well as optimizing network bandwidth by utlizing relatively small header messages.
+
+* Reliable Message Delivery - supports QoS (Quality of Service) and persistent sessions which addresses latency as well as lost messages. The implementation of QoS can be seen in the screenshot below. According to the experiment performed by Lee et al. (2021) message loss was reduced by 1.57 times when QoS 2 was used.
 
 ![This is an image](https://github.com/ssagroup2/SSA_SmartDeviceSimulation/blob/main/images/qos2.png)
+
+* Security Enabled - allows the implmentation of TLS as well as message encryption as seen in the application code.
 
 ## Functional Testing Images
 
