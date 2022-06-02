@@ -2,7 +2,7 @@
 
 ## Introduction ##
 
-An application was developed in [Python](https://www.python.org/) to simulate interactions between smart devices, sensors and brokers using the MQTT protocol.
+An application was developed in [Python](https://www.python.org/) to simulate interactions between smart devices, sensors and brokers using the MQTT protocol. MQTT is a well known standard for IoT messaging (MQTT, 2022).
 
 [Features](#features) •
 [Getting Started](#getting-started) •
@@ -161,9 +161,9 @@ The figure below represents a summary of the vulnerabilities identified in the i
 
 In addition the following vulnerabilities were mitigated:
 
-(TBD)
+Insecure Remote Access - The broker is configured to allow connection over SSL/TLS with a valid certificate and refuses conections from unauthorised devices/sensors. 
 
-Furthermore the application addresses reliability, latency and lost messages by the implementation of QoS as seen in the screenshot below. QoS....(TBD)
+Furthermore the application addresses reliability by the use of the MQTT protocol. MQTT supports QoS (Quality of Service) which addresses latency as well as lost messages. The implementation of QoS can be seen in the screenshot below. According to the experiment performed by Lee et al. (2021) message loss was reduced by 1.57 times when QoS 2 was used.
 
 ![This is an image](https://github.com/ssagroup2/SSA_SmartDeviceSimulation/blob/main/images/qos2.png)
 
@@ -173,6 +173,10 @@ Furthermore the application addresses reliability, latency and lost messages by 
 
 
 ## References 
+
+MQTT (2022) MQTT: The Standard for IoT Messaging. Available from: https://mqtt.org [Accessed 26 May 2022].
+
+
 
 
 (TBD)
