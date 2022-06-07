@@ -7,6 +7,7 @@ An application was developed in [Python](https://www.python.org/) to simulate in
 [Features](#features) •
 [Getting Started](#getting-started) •
 [Configuration](#configuration) •
+[Code Strcuture](#Code-Structure) •
 
 ![Simulator Running - Demo](tbd)
 
