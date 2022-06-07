@@ -145,7 +145,7 @@ Furthermore the application addresses reliability by the use of the MQTT protoco
 
 * Lightweight & Efficient - require minimal resources, reducing power consumption as well as optimizing network bandwidth by utilising relatively small header messages.
 
-* Reliable Message Delivery - supports QoS (Quality of Service) and persistent sessions which addresses latency as well as lost messages. The implementation of QoS can be seen in the screenshot below. According to the experiment performed by Lee et al. (2021) message loss was reduced by 1.57 times when QoS 2 was used.
+* Reliable Message Delivery - supports QoS (Quality of Service) and persistent sessions which addresses latency as well as lost messages. The implementation of QoS can be seen in the screenshot below. According to the experiment performed by Lee et al. (2013) message loss was reduced by 1.57 times when QoS 2 was used.
 
 ![This is an image](https://github.com/ssagroup2/SSA_SmartDeviceSimulation/blob/main/images/qos2.png)
 
