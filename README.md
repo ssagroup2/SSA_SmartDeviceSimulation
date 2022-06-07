@@ -2,7 +2,7 @@
 
 ## Introduction ##
 
-An application was developed in [Python](https://www.python.org/) to simulate interactions between smart devices, sensors and brokers using the MQTT protocol. MQTT is a well known standard for IoT messaging (MQTT, 2022).
+An application was developed in [Python](https://www.python.org/) to simulate interactions between smart devices, sensors and brokers using the MQTT protocol. MQTT is a well-known standard for IoT messaging (MQTT, 2022).
 
 [Features](#features) •
 [Getting Started](#getting-started) •
@@ -115,7 +115,7 @@ The code structure is as follows:
   | `RETAIN_PROBABILITY` | number          | Number between 0 and 1 for the probability of the previous data being retained and sent again                                   | yes                       |
   | `DATA`               | array\<Objects> | Specification of the data that will form the JSON to be sent in the topic                                                       | yes                       |
 
-- The key **DATA** inside TOPICS has a array of objects where each one has the format:
+- The key **DATA** inside TOPICS has an array of objects where each one has the format:
 
   ```json
   {
@@ -156,7 +156,7 @@ The figure below represents a summary of the vulnerabilities identified in the i
 
 01 - No Default, Weak or hardcoded passwords were used. Communication between sensor devices were performed via TLS certificate based authentication.
 
-03 - All communication was performed via port 8884 which supports TLS with Encrytpion. No insecure ports are used.
+03 - All communication was performed via port 8884 which supports TLS with Encryption. No insecure ports are used.
 
 05 - Secure protocols such as HTTPS are used to encrypt traffic in transit. 
 
@@ -164,17 +164,17 @@ The figure below represents a summary of the vulnerabilities identified in the i
 
 ![This is an image](https://github.com/ssagroup2/SSA_SmartDeviceSimulation/blob/main/images/crypt.jpg)
 
-Insecure Remote Access - The broker is configured to allow connection over SSL/TLS with a valid certificate and refuses conections from unauthorised devices/sensors. 
+Insecure Remote Access - The broker is configured to allow connection over SSL/TLS with a valid certificate and refuses connections from unauthorised devices/sensors. 
 
 Furthermore the application addresses reliability by the use of the MQTT protocol. MQTT provides the following benefits (MQTT, 2022):
 
-* Lightweight & Efficient - require minimal resources, reducing power consumption as well as optimizing network bandwidth by utlizing relatively small header messages.
+* Lightweight & Efficient - require minimal resources, reducing power consumption as well as optimizing network bandwidth by utilising relatively small header messages.
 
 * Reliable Message Delivery - supports QoS (Quality of Service) and persistent sessions which addresses latency as well as lost messages. The implementation of QoS can be seen in the screenshot below. According to the experiment performed by Lee et al. (2021) message loss was reduced by 1.57 times when QoS 2 was used.
 
 ![This is an image](https://github.com/ssagroup2/SSA_SmartDeviceSimulation/blob/main/images/qos2.png)
 
-* Security Enabled - allows the implmentation of TLS as well as message encryption as seen in the application code.
+* Security Enabled - allows the implementation of TLS as well as message encryption as seen in the application code.
 
 ## Functional Testing Images
 
