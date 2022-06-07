@@ -140,7 +140,7 @@ The code structure is as follows:
 
 1. Run the Mosquitto Broker which produces the following output:
 
-![This is an image](https://github.com/ssagroup2/SSA_SmartDeviceSimulation/blob/main/images/mos.png)
+![This is an image](https://github.com/ssagroup2/SSA_SmartDeviceSimulation/blob/main/images/mos1.png)
 
 2. Run `app.py` which produces the following output:
 
