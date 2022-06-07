@@ -144,7 +144,7 @@ The code structure is as follows:
 
 2. Run `app.py` which produces the following output:
 
-![This is an image](https://github.com/ssagroup2/SSA_SmartDeviceSimulation/blob/main/images/sensors.png)
+![This is an image](https://github.com/ssagroup2/SSA_SmartDeviceSimulation/blob/main/images/sensors1.png)
 
 ## Discussion
 
