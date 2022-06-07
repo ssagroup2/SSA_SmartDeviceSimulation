@@ -96,17 +96,7 @@ The code structure is as follows:
   	]
   }
   ```
-
-  | Key                  | Type            | Description                                                                                                                     | Required                  |
-  | -------------------- | --------------- | ------------------------------------------------------------------------------------------------------------------------------- | ------------------------- |
-  | `TYPE`               | string          | It can be `"single"`, `"multiple"` or `"list"`                                                                                  | yes                       |
-  | `PREFIX`             | string          | Prefix of the topic URL, depending on the `TYPE` it can be concatenated to `/<id>` or `/<item>`                                 | yes                       |
-  | `LIST`               | array\<any>     | When the `TYPE` is `"list"` the topic prefix will be concatenated with `/<item>` for each item in the array                     | if `TYPE` is `"list"`     |
-  | `RANGE_START`        | number          | When the `TYPE` is `"multiple"` the topic prefix will be concatenated with `/<id>` where `RANGE_START` will be the first number | if `TYPE` is `"multiple"` |
-  | `RANGE_END`          | number          | When the `TYPE` is `"multiple"` the topic prefix will be concatenated with `/<id>` where `RANGE_END` will be the last number    | if `TYPE` is `"multiple"` |
-  | `TIME_INTERVAL`      | number          | Time interval in seconds between submissions towards the topic                                                                  | yes                       |
-  | `RETAIN_PROBABILITY` | number          | Number between 0 and 1 for the probability of the previous data being retained and sent again                                   | yes                       |
-  | `DATA`               | array\<Objects> | Specification of the data that will form the JSON to be sent in the topic                                                       | yes                       |
+   ![This is an image](https://github.com/ssagroup2/SSA_SmartDeviceSimulation/blob/main/images/topics1.png)
 
 - The key **DATA** inside TOPICS has an array of objects where each one has the format:
 
