@@ -2,7 +2,7 @@
 
 ## Introduction ##
 
-An application was developed in [Python](https://www.python.org/) to simulate interactions between smart devices, sensors and brokers using the MQTT protocol. MQTT is a well-known standard for IoT messaging (MQTT, 2022). The code simulates lamps, heating sensors as well as oximeters (heartbeats, body temperature).
+An application was developed in [Python](https://www.python.org/) to simulate interactions between smart devices, sensors and brokers using the MQTT protocol. MQTT is a well-known standard for IoT messaging (MQTT, 2022). The code simulates lamps (on, off), heating sensors (temperature values) as well as oximeters (heartbeats, body temperature).
 
 [Features](#features) •
 [Getting Started](#getting-started) •
