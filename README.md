@@ -13,8 +13,6 @@ An application was developed in [Python](https://www.python.org/) to simulate in
 [Functional Testing Images](#functional-testing-images) •
 [References](#references) •
 
-![Simulator Running - Demo](tbd)
-
 ## Features
 
 - Client-based authentication
