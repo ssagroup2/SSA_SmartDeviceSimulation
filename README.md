@@ -79,7 +79,7 @@ The code structure is as follows:
   	]
   }
   ```
-![This is an image](https://github.com/ssagroup2/SSA_SmartDeviceSimulation/blob/main/images/broker1.png)
+   ![This is an image](https://github.com/ssagroup2/SSA_SmartDeviceSimulation/blob/main/images/broker1.png)
 
 - The key **TOPICS** has a array of objects where each one has the format:
 
