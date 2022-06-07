@@ -109,16 +109,8 @@ The code structure is as follows:
     "MAX_STEP": 0.2
   }
   ```
-
-  | Key         | Type   | Description                                                                          | Required                             |
-  | ----------- | ------ | ------------------------------------------------------------------------------------ | ------------------------------------ |
-  | `NAME`      | string | JSON property name to be sent                                                        | yes                                  |
-  | `TYPE`      | string | It can be `"int"`, `"float"` or `"bool"`                                             | yes                                  |
-  | `MIN_VALUE` | number | Minimum value that the property can assume                                           | If `TYPE` is different from `"bool"` |
-  | `MAX_VALUE` | number | Maximum value that the property can assume                                           | If `TYPE` is different from `"bool"` |
-  | `MAX_STEP`  | number | Maximum change that can be applied to the property from a published data to the next | If `TYPE` is different from `"bool"` |
-
-
+   ![This is an image](https://github.com/ssagroup2/SSA_SmartDeviceSimulation/blob/main/images/topics2.png)
+  
 ## Running the Code
 
 1. Run the Mosquitto Broker which produces the following output:
