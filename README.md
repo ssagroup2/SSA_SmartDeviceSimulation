@@ -6,8 +6,12 @@ An application was developed in [Python](https://www.python.org/) to simulate in
 
 [Features](#features) •
 [Getting Started](#getting-started) •
+[Code Structure](#code-structure) •
 [Configuration](#configuration) •
-[Code Strcuture](#Code-Structure) •
+[Running the Code](#running-the-code) •
+[Discussion](#discussion) •
+[Functional Testing Images](#functional-testing-images) •
+[References](#references) •
 
 ![Simulator Running - Demo](tbd)
 
