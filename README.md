@@ -79,12 +79,7 @@ The code structure is as follows:
   	]
   }
   ```
-
-  | Key           | Type            | Description                                            | Required |
-  | ------------- | --------------- | ------------------------------------------------------ | -------- |
-  | `BROKER_URL`  | string          | The broker URL where the data will be published        | yes      |
-  | `BROKER_PORT` | number          | The port used by the broker                            | yes      |
-  | `TOPICS`      | array\<Objects> | Specification of topics and how they will be published | yes      |
+![This is an image](https://github.com/ssagroup2/SSA_SmartDeviceSimulation/blob/main/images/broker1.jpg)
 
 - The key **TOPICS** has a array of objects where each one has the format:
 
