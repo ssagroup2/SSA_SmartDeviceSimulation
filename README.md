@@ -133,7 +133,7 @@ The figure below represents a summary of the vulnerabilities identified in the i
 
 03 - All communication was performed via port 8884 which supports TLS with Encryption. No insecure ports are used.
 
-05 - Secure protocols such as HTTPS are used to encrypt traffic in transit. 
+05 - Secure protocols such as MQTTS (Message Queuing Telemetry Transport Secured) are used to encrypt traffic in transit. 
 
 08 - Only secure (verified by md5 checksums) libraries are used. Example below:
 
