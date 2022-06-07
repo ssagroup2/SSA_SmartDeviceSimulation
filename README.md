@@ -21,7 +21,7 @@ An application was developed in [Python](https://www.python.org/) to simulate in
 - Efficient, modular and easy-to-use
 - JSON-based single configuration file
 - Pre-defined fixed topics
-- Multiple topics based on variable ID or ITEMs
+- Multiple topics based on variable ID
 - Random data generation based on JSON parameters used for simulation purposes
 
 ## Getting Started
