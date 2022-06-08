@@ -158,7 +158,7 @@ Furthermore the application addresses reliability by the use of the MQTT protoco
 
 ## References 
 
-MQTT (2022) MQTT: The Standard for IoT Messaging. Available from: https://mqtt.org [Accessed 26 May 2022].
-
 Lee, S., Kim, H., Hong, D & Ju, H. (2013) 'Correlation analysis of MQTT loss and delay according to QoS level', <i> The International Conference on Information Networking 2013 (ICOIN)</i>. Bangkok, 28-30 January 2013. USA: IEEE. Available from: https://ieeexplore.ieee.org/document/6496715 [Accessed 02 June 2022].
+
+MQTT (2022) MQTT: The Standard for IoT Messaging. Available from: https://mqtt.org [Accessed 26 May 2022].
 
