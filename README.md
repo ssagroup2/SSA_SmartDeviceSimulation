@@ -153,8 +153,17 @@ Furthermore the application addresses reliability by the use of the MQTT protoco
 
 ## Functional Testing Images
 
-(TBD)
+1. Test Authentication using SSL Certficates
 
+![This is an image](https://github.com/ssagroup2/SSA_SmartDeviceSimulation/blob/main/images/test1.jpg)
+
+2. Simulating MITM (Man-In-The-Middle) Scenario via mitmproxy (python) and acting as a broker to intercept client communications - test case fails as expected due to lack of required SSL certificates.
+
+![This is an image](https://github.com/ssagroup2/SSA_SmartDeviceSimulation/blob/main/images/test2.jpg)
+
+3. Graphical Displays using MQTT Explorer
+
+![This is an image](https://github.com/ssagroup2/SSA_SmartDeviceSimulation/blob/main/images/test3.jpg)
 
 ## References 
 
