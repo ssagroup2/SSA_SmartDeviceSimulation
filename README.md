@@ -167,7 +167,19 @@ Furthermore the application addresses reliability by the use of the MQTT protoco
 
 ## References 
 
+Hammi, B., Zeadally, S., Khatoun, R. & Nebhen, J. (2022) Survey on smart homes: Vulnerabilities, risks, and countermeasures. <i>Computers & Security</i>. 117: 102677. Available from: https://www.sciencedirect.com/science/article/pii/S016740482200075X [Accessed 18 May 2022].
+
 Lee, S., Kim, H., Hong, D & Ju, H. (2013) 'Correlation analysis of MQTT loss and delay according to QoS level', <i> The International Conference on Information Networking 2013 (ICOIN)</i>. Bangkok, 28-30 January 2013. USA: IEEE. Available from: https://ieeexplore.ieee.org/document/6496715 [Accessed 02 June 2022].
 
 MQTT (2022) MQTT: The Standard for IoT Messaging. Available from: https://mqtt.org [Accessed 26 May 2022].
+
+Olayemi, O., Antii, V., Keijo, H. & Pekka, T. (2017) Security issues in smart homes and mobile health system: threat analysis, possible countermeasures and lessons learned.<i> International Journal on Information Technologies and Security</i>. 9(1): 31-52. Available from: https://erepo.uef.fi/handle/123456789/5124 [Accessed: 17 May 2022].
+
+OWASP (2018) OWASP Internet of Things Top 10. Available from: https://owasp.org/www-pdf-archive/OWASP-IoT-Top-10-2018-final.pdf [Accessed 19 May 2022].
+
+Singh Verma, R. & Chandavarkar, B. R. (2019) Hard-coded Credentials and Web Service in IoT: Issues and Challenges.<i> International Journal of Computational Intelligence & IoT</i>. 2(3): 565-570. Available from:  https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3358283 [Accessed 21 May 2022].
+
+
+
+
 
