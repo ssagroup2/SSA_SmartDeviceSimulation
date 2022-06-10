@@ -127,7 +127,7 @@ The figure below represents a summary of the vulnerabilities identified in the i
 
 ![This is an image](https://github.com/ssagroup2/SSA_SmartDeviceSimulation/blob/main/images/vul.png)
 
-5 vulnerabilities were selected to be mitigated, these were as follows:
+Five vulnerabilities were selected to be mitigated, these were as follows:
 
 01 - No Default, Weak or hardcoded passwords were used. Communication between sensor devices were performed via TLS certificate based authentication.
 
