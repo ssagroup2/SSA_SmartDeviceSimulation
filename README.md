@@ -169,6 +169,8 @@ Furthermore the application addresses reliability by the use of the MQTT protoco
 
 Hammi, B., Zeadally, S., Khatoun, R. & Nebhen, J. (2022) Survey on smart homes: Vulnerabilities, risks, and countermeasures. <i>Computers & Security</i>. 117: 102677. Available from: https://www.sciencedirect.com/science/article/pii/S016740482200075X [Accessed 18 May 2022].
 
+Lashkari, A. H., Danesh, M. M. S., & Samadi, B. (2009) A survey on wireless security protocols (WEP, WPA and WPA2/802.11i). <i>2nd IEEE international conference on computer science and information technology</i>. 48-52. Available from: https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=5234856 [Accessed 23 May 2022].
+
 Lee, S., Kim, H., Hong, D & Ju, H. (2013) 'Correlation analysis of MQTT loss and delay according to QoS level', <i> The International Conference on Information Networking 2013 (ICOIN)</i>. Bangkok, 28-30 January 2013. USA: IEEE. Available from: https://ieeexplore.ieee.org/document/6496715 [Accessed 02 June 2022].
 
 MQTT (2022) MQTT: The Standard for IoT Messaging. Available from: https://mqtt.org [Accessed 26 May 2022].
