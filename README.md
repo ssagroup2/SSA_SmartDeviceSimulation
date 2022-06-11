@@ -31,7 +31,7 @@ An application was developed in [Python](https://www.python.org/) to simulate in
 The following pre-requisites are required to successfully run the code:
 
 * Python 3.10.3
-* Mosquitto Broker installed and running on port 8884
+* Mosquitto Broker installed and runs on port 8884
 
 ### Installing Dependencies
 
