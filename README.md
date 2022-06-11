@@ -31,7 +31,7 @@ An application was developed in [Python](https://www.python.org/) to simulate in
 The following pre-requisites are required to successfully run the code:
 
 * Python 3.10.3
-* Mosquitto Broker installed and runs on port 8884
+* Mosquitto broker installed and runs on port 8884
 
 ### Installing Dependencies
 
@@ -60,9 +60,9 @@ The code structure is as follows:
 
 `app.py` - Application placeholder file to run `simulator.py`
 
-`simulator.py` - Responsible for reading topics and displaying data to the terminal. This data is communication between sensors and the broker.
+`simulator.py` - Responsible for reading topics and displaying data to the terminal. This data is 'communication' between sensors and the broker.
 
-`topic.py` - Used to establish a connection between sensors and the broker. The broker uses the topic of a message to decide which client receives which message. TLS client certificates and key paths are configured in this file.
+`topic.py` - Used to establish a connection between sensors and the broker. The broker uses the topic of a message to decide which client receives what message. TLS client certificates and key paths are configured in this file.
 
 `sample-mosquitto.conf` - Configuration file for Mosquitto broker. TLS broker certificates and key paths are configured in this file.
 
@@ -81,7 +81,7 @@ The code structure is as follows:
   ```
    ![This is an image](https://github.com/ssagroup2/SSA_SmartDeviceSimulation/blob/main/images/broker1.png)
 
-- The key **TOPICS** has a array of objects where each one has the format:
+- The key **TOPICS** has an array of objects where each one has the following format:
 
   ```json
   {
@@ -98,7 +98,7 @@ The code structure is as follows:
   ```
    ![This is an image](https://github.com/ssagroup2/SSA_SmartDeviceSimulation/blob/main/images/topics1.png)
 
-- The key **DATA** inside TOPICS has an array of objects where each one has the format:
+- The key **DATA** inside TOPICS has an array of objects where each one has the following format:
 
   ```json
   {
@@ -113,7 +113,7 @@ The code structure is as follows:
   
 ## Running the Code
 
-1. Run the Mosquitto Broker which produces the following output:
+1. Run the Mosquitto broker which produces the following output:
 
 ![This is an image](https://github.com/ssagroup2/SSA_SmartDeviceSimulation/blob/main/images/mos1.png)
 
@@ -129,9 +129,9 @@ The figure below represents a summary of the vulnerabilities identified in the i
 
 Five vulnerabilities were selected to be mitigated, these were as follows:
 
-01 - No Default, Weak or hardcoded passwords were used. Communication between sensor devices were performed via TLS certificate based authentication.
+01 - No Default, weak or hardcoded passwords were used. Communication between sensor devices were performed via TLS certificate based authentication.
 
-03 - All communication was performed via port 8884 which supports TLS with Encryption. No insecure ports are used.
+03 - All communication was performed via port 8884 which supports TLS with encryption. No insecure ports are used.
 
 05 - Secure protocols such as MQTTS (Message Queuing Telemetry Transport Secured) are used to encrypt traffic in transit.
 
@@ -180,8 +180,3 @@ Olayemi, O., Antii, V., Keijo, H. & Pekka, T. (2017) Security issues in smart ho
 OWASP (2018) OWASP Internet of Things Top 10. Available from: https://owasp.org/www-pdf-archive/OWASP-IoT-Top-10-2018-final.pdf [Accessed 19 May 2022].
 
 Singh Verma, R. & Chandavarkar, B. R. (2019) Hard-coded Credentials and Web Service in IoT: Issues and Challenges.<i> International Journal of Computational Intelligence & IoT</i>. 2(3): 565-570. Available from:  https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3358283 [Accessed 21 May 2022].
-
-
-
-
-
