@@ -167,11 +167,11 @@ Furthermore the application addresses reliability by the use of the MQTT protoco
 
 4. Simulation of controller and input processing
 
-![This is an image](https://github.com/ssagroup2/SSA_SmartDeviceSimulation/blob/main/images/Controller change over SSL-TLS 1.jpg)
+![This is an image](https://github.com/ssagroup2/SSA_SmartDeviceSimulation/blob/main/images/Controller1.jpg)
 
-![This is an image](https://github.com/ssagroup2/SSA_SmartDeviceSimulation/blob/main/images/Controller change over SSL-TLS 2.jpg)
+![This is an image](https://github.com/ssagroup2/SSA_SmartDeviceSimulation/blob/main/images/Controller2.jpg)
 
-![This is an image](https://github.com/ssagroup2/SSA_SmartDeviceSimulation/blob/main/images/Controller change over SSL-TLS, history.jpg)
+![This is an image](https://github.com/ssagroup2/SSA_SmartDeviceSimulation/blob/main/images/Controller3.jpg)
 
 ## References 
 
