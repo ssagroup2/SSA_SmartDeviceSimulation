@@ -165,6 +165,14 @@ Furthermore the application addresses reliability by the use of the MQTT protoco
 
 ![This is an image](https://github.com/ssagroup2/SSA_SmartDeviceSimulation/blob/main/images/test3.jpg)
 
+4. Simulation of controller and input processing
+
+![This is an image](https://github.com/ssagroup2/SSA_SmartDeviceSimulation/blob/main/images/Controller change over SSL-TLS 1.jpg)
+
+![This is an image](https://github.com/ssagroup2/SSA_SmartDeviceSimulation/blob/main/images/Controller change over SSL-TLS 2.jpg)
+
+![This is an image](https://github.com/ssagroup2/SSA_SmartDeviceSimulation/blob/main/images/Controller change over SSL-TLS, history.jpg)
+
 ## References 
 
 Hammi, B., Zeadally, S., Khatoun, R. & Nebhen, J. (2022) Survey on smart homes: Vulnerabilities, risks, and countermeasures. <i>Computers & Security</i>. 117: 102677. Available from: https://www.sciencedirect.com/science/article/pii/S016740482200075X [Accessed 18 May 2022].
